@@ -10,5 +10,6 @@ resource "local_file" "setenvvars" {
     #!/bin/bash
     export OUTPUT='Hello ${var.random_input}'
     echo $OUTPUT
+    gcloud --version
   EOT
 }
